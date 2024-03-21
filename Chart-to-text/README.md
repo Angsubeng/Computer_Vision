@@ -1,23 +1,23 @@
-**Project Overview:**
+# Project Overview
 
-"Chart to text" presents a process of extracting text from chart images to transform them into interpretable images. Initially, the original Excel data, captions, and titles from Statista are acquired as files and then translated from English to Korean. Subsequently, in the chart_generator.ipynb file, based on the Korean data, captions, and titles, 4 types of charts (Bar, Line, Pie, Table) are generated using plotly. The generated chart images are saved with filenames in the format 'data_number_chart_type_chart_direction'.
+## "Chart to Text"
 
-**Execution Steps:**
+The "Chart to Text" project aims to extract text from chart images to make them interpretable. It involves acquiring original Excel data, captions, and titles from Statista, translating them from English to Korean, generating charts using plotly based on the Korean data, and labeling and classifying the generated chart images.
 
-**Data Collection and Translation:**
-1. Download the Excel data, captions, and titles provided by Statista.
-2. Translate the English files into Korean. This can be achieved using methods such as Papago crawling, googletrans, or Papago API.
+### Data Collection and Translation
+1. **Download**: Obtain Excel data, captions, and titles provided by Statista.
+2. **Translation**: Translate English files into Korean using methods like Papago crawling, googletrans, or Papago API.
 
-**Chart Generation:**
-1. Execute the chart_generator.ipynb file to generate charts using plotly based on Korean data, captions, and titles.
-2. The generated chart images are named according to the corresponding data number, chart type, and chart direction.
+### Chart Generation
+1. **Execution**: Run `chart_generator.ipynb` to generate charts with plotly using Korean data, captions, and titles.
+2. **Naming**: Save generated chart images with filenames in the format 'data_number_chart_type_chart_direction'.
 
-**Labeling:**
-1. Run the chart_labeling.ipynb file to apply labeling to the generated chart image filenames.
-2. Ensure consistency by applying the same labels to the data, captions, and title files.
+### Labeling
+1. **Processing**: Execute `chart_labeling.ipynb` to apply labeling to generated chart image filenames.
+2. **Consistency**: Ensure consistency by applying the same labels to data, captions, and title files.
 
-**Chart Classification:**
-1. Execute the chart_classification.ipynb file to classify the generated files according to chart types.
-2. Utilize a pre-trained ResNet50 model trained on ImageNet, employing techniques such as data augmentation and early stopping to prevent overfitting. 
+### Chart Classification
+1. **Execution**: Run `chart_classification.ipynb` to classify generated files based on chart types.
+2. **Model**: Utilize a pre-trained ResNet50 model trained on ImageNet, employing techniques like data augmentation and early stopping to prevent overfitting.
 
-If you need further assistance or clarification, feel free to ask.
+If further assistance or clarification is needed, feel free to ask.
